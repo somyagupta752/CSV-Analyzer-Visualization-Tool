@@ -75,7 +75,3 @@ This project is made possible thanks to the contributions of the open-source com
 - **Matplotlib** for data visualization.
 - **Pydantic-AI** for structured AI responses.
 - **Ollama** for AI-powered query processing.
-
-
-
-
