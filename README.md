@@ -50,10 +50,4 @@ This is a **CSV Analyzer & Visualization Tool** built using **Gradio**, **Pandas
   python app.py
   ```
 
-## 📜 License
-This project is open-source under the **MIT License**.
-
----
-
-Open to contributions and improvements!
 
