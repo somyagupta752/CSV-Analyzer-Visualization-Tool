@@ -1,6 +1,6 @@
 body {
     background-color: #1e1e2e;
-    color: #cdd6f4;
+    --body-text-color: #cdd6f4;
 }
 h1, h2, h3, h4 {
     color: #fab387;
