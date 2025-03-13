@@ -1,0 +1,25 @@
+body {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+h1, h2, h3, h4 {
+    color: #fab387;
+}
+.gradio-container {
+    background-color: #313244 !important;
+    border-radius: 10px;
+    padding: 20px;
+}
+.gradio-button {
+    background-color: #fab387 !important;
+    color: #1e1e2e !important;
+    border-radius: 8px;
+}
+.gradio-button:hover {
+    background-color: #f38ba8 !important;
+}
+textarea, input, select {
+    background-color: #45475a !important;
+    color: #cdd6f4 !important;
+    border-radius: 5px;
+}
