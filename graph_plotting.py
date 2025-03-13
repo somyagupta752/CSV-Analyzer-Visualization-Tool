@@ -1,20 +1,23 @@
 import matplotlib.pyplot as plt
-from file_handling import global_df
+from file_handling import DataStore
 
 def plot_graph(x_column, y_column, graph_type):
     """Generates a graph based on user input and handles errors."""
-    if global_df is None:
+    datastore = DataStore()  # Get singleton instance
+    df = datastore.global_df  # Access the shared dataframe
+
+    if df is None:
         return "⚠ No CSV file uploaded. Please upload a file first."
 
     try:
         plt.figure(figsize=(8, 5))
 
         if graph_type == "Bar":
-            plt.bar(global_df[x_column], global_df[y_column], color="skyblue")
+            plt.bar(df[x_column], df[y_column], color="skyblue")
         elif graph_type == "Line":
-            plt.plot(global_df[x_column], global_df[y_column], marker="o", linestyle="-", color="green")
+            plt.plot(df[x_column], df[y_column], marker="o", linestyle="-", color="green")
         elif graph_type == "Scatter":
-            plt.scatter(global_df[x_column], global_df[y_column], color="red")
+            plt.scatter(df[x_column], df[y_column], color="red")
 
         plt.xlabel(x_column)
         plt.ylabel(y_column)

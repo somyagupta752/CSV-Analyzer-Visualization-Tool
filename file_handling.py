@@ -1,19 +1,24 @@
 import pandas as pd
 
-global_df = None
-column_names = []
+class DataStore:
+    """Singleton class to store global data."""
+    _instance = None
+    global_df = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(DataStore, cls).__new__(cls)
+        return cls._instance
 
 def upload_csv(file):
     """Uploads CSV and validates it."""
-    global global_df, column_names
-
     if file is None:
         return "⚠ No file uploaded.", None
 
     try:
         df = pd.read_csv(file.name)
-        global_df = df
-        column_names = df.columns.tolist()
+        datastore = DataStore()  # Get singleton instance
+        datastore.global_df = df  # Store the dataframe globally
 
         if df.empty:
             return "⚠ The uploaded CSV file is empty.", None

@@ -23,3 +23,7 @@ textarea, input, select {
     color: #cdd6f4 !important;
     border-radius: 5px;
 }
+
+table{
+    color: #1e1e2e;
+}
