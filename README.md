@@ -1,7 +1,7 @@
 # CSV Analyzer & Visualization Tool
 
 ## 📌 Overview
-This is a **CSV Analyzer & Visualization Tool** built using **Gradio**, **Pandas**, **Matplotlib**, and **Pydantic-AI**. The tool helps in:
+This is a **CSV Analyzer & Visualization Tool** built using **Gradio**, **Pandas**, **Matplotlib**, and **Pydantic-AI** powered by **Ollama**. The tool helps in:
 - Uploading and validating CSV files.
 - Generating different types of graphs (Bar, Line, Scatter) from CSV data.
 - Answering questions about the uploaded CSV using AI.
@@ -9,13 +9,13 @@ This is a **CSV Analyzer & Visualization Tool** built using **Gradio**, **Pandas
 ## 🚀 Features
 - 📂 **CSV File Upload & Validation** – Checks for missing values, displays column types, and gives a preview.
 - 📊 **Graph Generator** – Allows users to create **Bar, Line, or Scatter plots** for easy visualization.
-- 🧠 **AI-Powered Query System** – Users can ask questions and get responses based on CSV data.
+- 🧠 **AI-Powered Query System** – Users can ask questions and get responses based on CSV data using **Ollama LLM**.
 - 🎨 **Dark-Themed UI** – Styled for a modern and clean look.
 
 ## 🛠 Problem-Solving Approach
 - **CSV Handling** – Validates uploaded files and ensures clean data processing.
 - **Data Visualization** – Provides an easy way to analyze trends in data through charts.
-- **AI Query System** – Uses an AI model to answer user questions about the uploaded CSV.
+- **AI Query System** – Uses an **Ollama-powered LLM** to answer user questions about the uploaded CSV.
 - **Error Handling** – Catches and displays errors in a user-friendly manner.
 
 ## 🎓 Learnability
@@ -43,7 +43,7 @@ This is a **CSV Analyzer & Visualization Tool** built using **Gradio**, **Pandas
 - Python 3.8+
 - Install dependencies:
   ```bash
-  pip install gradio pandas matplotlib pydantic pydantic-ai
+  pip install gradio pandas matplotlib pydantic-ai
   ```
 - Start the application:
   ```bash
